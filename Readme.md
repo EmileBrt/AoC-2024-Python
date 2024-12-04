@@ -1,8 +1,8 @@
 # AoC-2024-Python
 
-Mes solutions du challenge AoC 2024 en Python
-
 <div align="center">
+
+<p> Mes solutions du challenge AoC 2024 en Python </p>
 
 | Day | Part 1 | Part 2 |
 |:--------:|:--------:|:--------:|
