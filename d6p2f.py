@@ -1,5 +1,8 @@
 from copy import deepcopy
+import multiprocessing
 from tqdm import tqdm
+import time
+
 
 with open("i6.txt") as f:
     data = f.readlines()
@@ -45,10 +48,9 @@ while(True):
         pos_y += pos_dir[1]
         pos_x += pos_dir[0]
         
-for i, p in tqdm(enumerate(r), total=len(r), desc="Processing"):
-
+def worker_function(p):
     data_copy = deepcopy(data)
-    ## data_copy[p[0]][p[1]] = "#"
+
     data_copy[p[0]] = list(data_copy[p[0]])
     data_copy[p[0]][p[1]] = "#"
     data_copy[p[0]] = "".join(data_copy[p[0]])
@@ -64,9 +66,8 @@ for i, p in tqdm(enumerate(r), total=len(r), desc="Processing"):
         cond2 = (0 <= (pos_y + pos_dir[1]) < len(data_copy))
         if( (False == cond1) or (False == cond2) ):
             break
-        elif [pos_x,pos_y,pos_dir] in r2: # looping
-            s += 1
-            break
+        elif [pos_x,pos_y,pos_dir] in r2:
+            return 1
         else:
             r2.append([pos_x,pos_y,pos_dir])
 
@@ -75,5 +76,13 @@ for i, p in tqdm(enumerate(r), total=len(r), desc="Processing"):
         else:
             pos_y += pos_dir[1]
             pos_x += pos_dir[0]
+    return 0
 
-print(f"{s= }")
+
+num_processes = 5
+# Create a pool of workers
+with multiprocessing.Pool(processes=num_processes) as pool:
+    # Use tqdm with pool.map to show a progress bar
+    results = list(tqdm(pool.imap(worker_function, r), total=num_processes, desc="Processing"))
+
+print(f"Results: {sum(results)}")  # Output: [1, 4, 9, 16, 25]
