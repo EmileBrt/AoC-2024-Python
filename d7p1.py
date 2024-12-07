@@ -16,18 +16,13 @@ def rec_search(goal, l):
     
     # LEFT TO RIGHT READ THE CHALLENGE YOU DUMBASS
     m = l.pop(0)
-    l1 = deepcopy(l)
-    l1[0] *= m
-    l2 = deepcopy(l)
-    l2[0] += m
-
+    l1 , l2 = deepcopy(l), deepcopy(l)
+    l1[0], l2[0] = l1[0] *m, l2[0] + m
     return max(rec_search(goal,l1 ), rec_search(goal,l2))
 
-    
 for i,_ in enumerate(d):
     d[i] = d[i].split(": ")
-    d[i][0] = int(d[i][0])
-    d[i][1] = [int(x) for x in d[i][1].replace("\n","").split(" ")]
+    d[i][0],d[i][1] = int(d[i][0]), [int(x) for x in d[i][1].replace("\n","").split(" ")]
         
 s=0
 for i, _ in tqdm(enumerate(d), total=len(d), desc="Processing"):
