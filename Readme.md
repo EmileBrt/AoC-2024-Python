@@ -12,5 +12,6 @@
 | 4  | [x](d4p1.py) | [x](d4p2.py) |
 | 5  | [x](d5p1.py) | [x](d5p2.py) |
 | 6  | [x](d6p1.py) | [x](d6p2.py) |
+| 7  | [x](d7p1.py) | [x](d7p2.py) |
 
 </div>
