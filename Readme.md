@@ -2,6 +2,8 @@
 
 <div align="center">
 
+![](https://geps.dev/progress/32)
+
 <p> Mes solutions du challenge AoC 2024 en Python </p>
 
 | Day | Part 1 | Part 2 |
@@ -13,5 +15,6 @@
 | 5  | [x](solutions/d5p1.py) | [x](solutions/d5p2.py) |
 | 6  | [x](solutions/d6p1.py) | [x](solutions/d6p2.py) |
 | 7  | [x](solutions/d7p1.py) | [x](solutions/d7p2.py) |
+| 8  | [x](solutions/d8p1.py) | [x](solutions/d8p2.py) |
 
 </div>
