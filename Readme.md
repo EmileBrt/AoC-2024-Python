@@ -2,7 +2,7 @@
 
 <div align="center">
 
-![](https://geps.dev/progress/36)
+![](https://geps.dev/progress/40)
 
 <p> Mes solutions du challenge AoC 2024 en Python </p>
 
