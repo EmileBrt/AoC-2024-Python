@@ -17,6 +17,8 @@
 | 7  | [x](solutions/d7p1.py) | [x](solutions/d7p2.py) |
 | 8  | [x](solutions/d8p1.py) | [x](solutions/d8p2.py) |
 | 9  | [x](solutions/d9p1.py) | [x](solutions/d9p2.py) |
+| 10  | [x](solutions/d10p1.py) | [x](solutions/d10p2.py) |
+
 
 
 </div>

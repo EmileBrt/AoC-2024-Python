@@ -44,7 +44,6 @@ for i in range(1, len(data) - 1 ):
 res = 0
 for _,s in enumerate(i0):
     for _,e in enumerate(i9):
-        if nx.has_path(G,str(s),str(e)) == True:
-            res += 1
+        res += len(list(nx.all_simple_paths(G, str(s), str(e))))
 
 print(f"{res= }")
