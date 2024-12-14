@@ -2,7 +2,7 @@
 
 <div align="center">
 
-![](https://geps.dev/progress/50)
+![](https://geps.dev/progress/56)
 
 <p> Mes solutions du challenge AoC 2024 en Python </p>
 
@@ -21,6 +21,7 @@
 | 11  | [x](solutions/d11p1.py) | [x](solutions/d11p2.py) |
 | 12  | [x](solutions/d12p1.py) | [x](solutions/d12p2.py) | 
 | 13  | [x](solutions/d13p1.py) | [x](solutions/d13p2.py) |
+| 14  | [x](solutions/d14p1.py) | [x](solutions/d14p2.py) |
 
 
 </div>
