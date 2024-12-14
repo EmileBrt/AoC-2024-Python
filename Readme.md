@@ -19,9 +19,9 @@
 | 9  | [x](solutions/d9p1.py) | [x](solutions/d9p2.py) |
 | 10  | [x](solutions/d10p1.py) | [x](solutions/d10p2.py) |
 | 11  | [x](solutions/d11p1.py) | [x](solutions/d11p2.py) |
-| 12  | [x](solutions/d12p1.py) | FAILED [x](solutions/d12p2.py) | 
-| 13  | [x](solutions/d13p1.py) | FAILED [x](solutions/d13p2.py) |
-| 14  | [x](solutions/d14p1.py) | FAILED [x](solutions/d14p2.py) |
+| 12  | [x](solutions/d12p1.py) | [FAILED](solutions/d12p2.py) | 
+| 13  | [x](solutions/d13p1.py) | [FAILED](solutions/d13p2.py) |
+| 14  | [x](solutions/d14p1.py) | [FAILED](solutions/d14p2.py) |
 
 
 </div>
