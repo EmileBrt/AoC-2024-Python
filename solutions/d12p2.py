@@ -76,4 +76,3 @@ for cluster in clusters:
     s += angles*area
 
 print(f"{s= }")
-
